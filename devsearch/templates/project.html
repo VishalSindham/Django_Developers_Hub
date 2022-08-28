@@ -1,0 +1,28 @@
+{% extends 'main.html' %}
+{% block content %}
+
+<h1>Project App</h1>
+
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>description</th>
+        <th>tags</th>
+        <th>reviews</th>
+    </tr>
+    {% for project  in projects %}
+    <tr>
+        <th>{{ project.id }}</th>
+        <th>{{project.title}}</th>
+        <th>{{ project.description}}</th>
+        <th> <hr> {% for tag in project.tags.all %}  <span style="border: 1px solid" > {{ tag }} </span>{% endfor %} <hr></th>
+        <th>{% for review in project.review_set.all %} {{ review }} <hr>  {% endfor %}</th>
+    </tr>
+    {% endfor %}    
+</table>
+
+
+
+{% endblock content %}
