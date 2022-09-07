@@ -26,7 +26,7 @@ SECRET_KEY = os.environ['DJANGO_SECRET_KEY','2$doc$=d(^86z(*2x67zcz-vl(s*g9j(4g9
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG','') != 'False'
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*','https://django-developers-hub-vishal.herokuapp.com/']
 
 
 
