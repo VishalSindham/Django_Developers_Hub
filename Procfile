@@ -1,3 +1,3 @@
 release : python manage.py migrate
 web: gunicorn devsearch.wsgi --log-file -
-python: python manage.py runserver
+python: python manage.py runserver && python manage.py collectstatic –noinput
