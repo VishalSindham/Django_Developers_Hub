@@ -1,2 +1,2 @@
-web: gunicorn devsearch.wsgi --log-file -
-python : manage.py runserver
+release : python manage.py migrate
+web: gunicorn devsearch.wsgi
