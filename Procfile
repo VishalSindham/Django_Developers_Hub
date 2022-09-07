@@ -1,3 +1,3 @@
 release : python manage.py migrate
-web: gunicorn devsearch.wsgi
+web: gunicorn devsearch.wsgi --log-file -
 python: python manage.py runserver
