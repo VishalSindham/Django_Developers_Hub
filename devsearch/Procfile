@@ -1,2 +1,2 @@
-web: gunicorn devsearch.wsgi --log-file - --bind 0.0.0.0:$PORT
+web: gunicorn devsearch.wsgi --log-file - 
 python:  python manage.py collectstatic –noinput && python manage.py runserver
