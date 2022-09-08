@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-2$doc$=d(^86z(*2x67zcz-vl(s*g9j(4g9p__l!60m%-osd0f
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = os.environ.get('DJANGO_DEBUG','') != 'False'
 DEBUG = False
-ALLOWED_HOSTS = ['https://django-developers-hub-vishal.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 
